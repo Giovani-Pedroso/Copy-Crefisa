@@ -1,0 +1,487 @@
+*{
+    --heigth-pre-navbar: 40px;
+    --yellow-1: #fdb913;
+    --blue-1:#1bafd8;
+    --blue-2: #38bfe4;
+    --blue-bg-1:#007bff;
+    --padding-defaul: 0px 8%;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: "Lato", sans-serif;
+}
+
+/*
+--------------------------------------------------------------------------
+PerNavbar
+--------------------------------------------------------------------------
+*/
+
+.pre-navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height:var(--heigth-pre-navbar);
+    background-color: var(--blue-1);
+    color:white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: var(--padding-defaul);
+}
+
+
+.pre-navbar ul{
+    list-style: none;
+}
+
+.section-navbar{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    margin:0px;
+    height:100%;
+}
+
+.section-navbar li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color:white;
+}
+
+
+.section-navbar a{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    margin: 0px 20px;
+}
+
+#faca-buttom{
+    height:100%;
+    background-color: var(--yellow-1);
+}
+
+/*
+------------------------------------------------------------------------
+Navbar
+------------------------------------------------------------------------
+*/
+
+#navbar{
+    background-color: var(--blue-2);
+    margin:0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:60px;
+    font-size: 1rem;
+    padding: var(--padding-defaul);
+    position: sticky;
+    top:0;
+}
+
+
+
+.item-navbar:hover {
+    background-color:white;
+
+}
+
+.item-navbar:hover a{
+    color:var(--blue-1);
+}
+
+#oque:hover{
+    background-color:var(--blue-2);
+}
+
+#oque:hover a{
+    color:white;
+}
+
+/*
+------------------------------------------------------------------------
+Carroseu
+------------------------------------------------------------------------
+*/
+
+#carroseu{
+    height:100hv;
+    
+}
+
+
+
+/*
+------------------------------------------------------------------------
+Produtos para você
+------------------------------------------------------------------------
+*/
+
+.produtos{
+    padding: var(--padding-defaul)
+}
+.titulo-section{
+    font-size: 16px;
+    margin-bottom: 0px;
+    color:#888;
+}
+.sub-titulo-section{
+    margin-top:0px;
+    font-size: 48px;
+    max-width: 560px;
+    font-weight:300;
+    color: var(--blue-2);
+}
+
+.cartoes-produtos{
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.cartao-produtos{
+    width:300px;
+    display:flex;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    flex-direction:column;
+}
+
+.cartao-produtos img{
+    border-radius:5px;
+}
+
+.cartao-produtos h3{
+    color: var(--blue-2);
+    font-weight: 400;
+}
+
+.cartao-produtos p{
+    padding:0px;
+}
+
+.cartao-produtos a{
+    display:flex;
+    border-radius:5px;
+    margin-top: 50px;
+    justify-content:center;
+    align-items: center;
+    padding:6px;
+    color:white;
+    text-decoration: none;
+    background-color:var(--yellow-1);
+}
+
+
+/*
+------------------------------------------------------------------------
+Pontos de atendimento
+------------------------------------------------------------------------
+*/
+.pontos-de-atendimento{
+    background-image:url("../images/fundomaps.png");
+    padding: var(--padding-defaul);
+    display:flex;
+}
+
+.texto-section{
+    max-width: 200px;
+}
+
+.pontos-de-atendimento form{
+    width:50%;
+		     
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.cep-input{
+    width:80%;
+    padding:1rem;
+}
+
+#botoes-form{
+    width:86%;
+    display:flex;
+    margin:0px;
+    justify-content: space-between;
+}
+
+.localizacao{
+    margin:14px;
+    font-size:1rem;
+    padding:1rem;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+#pesquisar{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    padding:10px;
+    background-color:var(--yellow-1);
+    color:white;
+		     
+}
+
+#ou-digite{
+    background: none;
+    border: 1px solid #888;
+    cursor: pointer;
+    outline: inherit;
+    padding:10px;
+    color:#888;
+
+}
+
+
+/*
+------------------------------------------------------------------------
+Faça seu emprestimo
+------------------------------------------------------------------------
+*/
+
+#agende{
+    background-color: var(--blue-bg-1);
+    width:100%;
+    height: 380px;
+    color:white;
+    display:flex;
+    margin-top:26px ;
+}
+
+
+#faca{
+    max-width:200px;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#faca h1{
+    font-size:1rem;
+    font-weight: 600;
+}
+
+#faca h2{
+    font-size:1.5rem;
+    font-weight: 300;
+}
+
+#faca button{
+
+    background: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: inherit;
+    padding:10px;
+    color:#fff;
+}
+
+#faca button:hover{
+    background-color:white;
+    color:#888;
+}
+
+/*
+------------------------------------------------------------------------
+Nossos aplicativos
+------------------------------------------------------------------------
+*/
+#nossos-aplicativos{
+    padding:var(--padding-defaul);
+    
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#texto-nossos-apps{
+    width:30%
+}
+
+
+#apps{
+    width:30%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.app-container{
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.app-container p{
+    text-align:center;
+    color:var(--blue-1);
+    font-size:.7rem;
+}
+
+#celular{
+    width:30%
+}
+
+footer{
+    font-size: .8rem;
+    color:white;
+    background-color:var(--blue-2);
+    padding:8px 8%;
+
+}
+
+/*
+------------------------------------------------------------------------
+Nossa Marca
+------------------------------------------------------------------------
+*/
+
+#nossa-marca{
+    width:100%;
+    padding: var(--padding-defaul);
+    background-color: var(--blue-bg-1);
+    color:white;
+    display:flex;
+    align-items: center;
+}
+
+#painel{
+
+    display:flex;
+    flex-direction: row;
+}
+
+#painel-esquerda{
+
+}
+
+#painel-direita{
+
+}
+
+.icone{
+    border:1px solid white;
+    padding: 10px;
+    border-radius:100%;
+    margin-right: 10px;
+    cursor: position;
+}
+
+
+.images-painel{
+    display:flex;
+    flex-direction: column;
+}
+
+#midias-sociais{
+    color:white;
+    width:50%;
+    padding: 0px 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#midias-sociais h1, #midias-sociais h2{
+    color:white;
+}
+
+/*
+------------------------------------------------------------------------
+Contatos
+------------------------------------------------------------------------
+*/
+
+#contatos{
+    padding:var(--padding-defaul);
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.categoria-contato{
+ 
+    font-size:1.4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.numeros{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.titulo-contato{
+
+    margin:0px;
+    font-size:0.8rem;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.numero-contato{
+    margin:0px;
+    color:var(--blue-1);
+    font-size:1.4rem;
+}
+
+hr{
+    width:84%;
+    margin: 30px auto;
+    
+}
+
+/*
+------------------------------------------------------------------------
+Crefisa SA
+------------------------------------------------------------------------
+*/
+#crefisa-sa{
+    padding:var(--padding-defaul);
+    display:flex;
+    justify-content:space-between;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+}
+
+.empresa{
+    width:30%;
+}
+
+.nome{
+    color:var(--blue-1);
+}
+
+.cnpj{
+    color:#aaa;
+}
+
+.endereco{
+    color:#888;
+}
+
+#aviso{
+    width:20%;
+}
